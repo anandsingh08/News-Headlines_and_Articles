@@ -1,17 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000020"
     tools:context=".MainActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+  <GridLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:columnCount="2"
+      android:rowCount="4"
+      android:layout_margin="10dp"
+      android:layout_gravity="center_horizontal"
+      android:columnOrderPreserved="false"
+      >
+
+     <androidx.cardview.widget.CardView
+         android:layout_width="160dp"
+         android:layout_height="160dp"
+         app:cardElevation="5dp"
+         app:cardCornerRadius="10dp"
+         android:layout_marginStart="15dp"
+         android:layout_marginTop="25dp"
+         android:layout_marginBottom="15dp">
+        <Button
+            android:id="@+id/science"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/scienceimg" />
+
+     </androidx.cardview.widget.CardView>
+
+     <androidx.cardview.widget.CardView
+         android:layout_width="160dp"
+         android:layout_height="160dp"
+         app:cardElevation="5dp"
+         app:cardCornerRadius="10sp"
+         android:layout_gravity="end"
+         android:layout_marginEnd="15dp"
+         android:layout_marginTop="25dp"
+         android:layout_marginBottom="15dp"
+         >
+        <Button
+            android:id="@+id/business"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/businessimg"
+            />
+
+     </androidx.cardview.widget.CardView>
+
+     <androidx.cardview.widget.CardView
+
+         android:layout_width="160dp"
+         android:layout_height="160dp"
+         app:cardElevation="5dp"
+         app:cardCornerRadius="10sp"
+         android:layout_marginStart="15dp"
+         android:layout_marginTop="15dp"
+         android:layout_marginBottom="15dp"
+         >
+        <Button
+            android:id="@+id/technology"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/techimg"
+            />
+     </androidx.cardview.widget.CardView>
+
+     <androidx.cardview.widget.CardView
+         android:layout_width="160dp"
+         android:layout_height="160dp"
+         app:cardElevation="5dp"
+         app:cardCornerRadius="10sp"
+         android:layout_gravity="end"
+         android:layout_marginEnd="15dp"
+         android:layout_marginTop="15dp"
+         android:layout_marginBottom="15dp"
+         >
+        <Button
+            android:id="@+id/everything"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/globalnewsimg"
+
+            />
+
+     </androidx.cardview.widget.CardView>
+
+     <androidx.cardview.widget.CardView
+         android:layout_width="160dp"
+         android:layout_height="160dp"
+         app:cardElevation="5dp"
+         app:cardCornerRadius="10sp"
+         android:layout_marginStart="15dp"
+         android:layout_marginTop="15dp"
+         android:layout_marginBottom="15dp"
+         >
+        <Button
+            android:id="@+id/sports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sportsimg"
+            />
+
+     </androidx.cardview.widget.CardView>
+
+     <androidx.cardview.widget.CardView
+
+         android:layout_width="160dp"
+         android:layout_height="160dp"
+         app:cardElevation="5dp"
+         app:cardCornerRadius="10sp"
+         android:layout_gravity="end"
+         android:layout_marginEnd="15dp"
+         android:layout_marginTop="15dp"
+         android:layout_marginBottom="15dp"
+         >
+        <Button
+            android:id="@+id/health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/healthimg"
+
+            />
+
+     </androidx.cardview.widget.CardView>
+
+     <androidx.cardview.widget.CardView
+
+         android:layout_width="160dp"
+         android:layout_height="160dp"
+         app:cardElevation="5dp"
+         app:cardCornerRadius="10sp"
+         android:layout_marginStart="15dp"
+         android:layout_marginTop="15dp"
+         android:layout_marginBottom="65dp"
+         >
+        <Button
+            android:id="@+id/entertainment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/entertainmentimg"
+            />
+     </androidx.cardview.widget.CardView>
+
+     <androidx.cardview.widget.CardView
+
+         android:layout_width="160dp"
+         android:layout_height="160dp"
+         app:cardElevation="5dp"
+         app:cardCornerRadius="10sp"
+         android:layout_gravity="end"
+         android:layout_marginEnd="15dp"
+         android:layout_marginTop="15dp"
+         android:layout_marginBottom="65dp"
+         >
+        <Button
+            android:id="@+id/general"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/generalimg"
+            />
+
+     </androidx.cardview.widget.CardView>
+
+
+  </GridLayout>
+
+</ScrollView>
