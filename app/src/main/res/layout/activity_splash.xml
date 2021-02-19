@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Splash">
+
+    <ImageView
+        android:id="@+id/icn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_chrome_reader_mode_24"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="100dp"
+        />
+    <TextView
+        android:layout_toRightOf="@id/icn"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff00"
+        android:text="News"
+        android:textSize="50sp"
+        android:layout_centerVertical="true"
+        />
+
+
+</RelativeLayout>
